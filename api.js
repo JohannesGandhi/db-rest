@@ -16,6 +16,8 @@ import {parseBoolean, parseInteger} from 'hafas-rest-api/lib/parse.js'
 import {loyaltyCardParser} from './lib/loyalty-cards.js'
 import {route as stations} from './routes/stations.js'
 import {route as station} from './routes/station.js'
+import {parseRoutingMode} from './lib/parse.js'
+import {routingModes} from 'hafas-client/p/db/routing-modes.js'
 
 const pkg = require('./package.json')
 
@@ -66,6 +68,13 @@ const mapRouteParsers = (route, parsers) => {
 			type: 'integer',
 			defaultStr: '*adult*',
 			parse: parseInteger
+		},
+		routingMode: {
+			description: 'HAFAS routing mode, see [Routing Mode](#routing-mode)',
+			type: 'string',
+			enum: Object.keys(routingModes),
+			defaultStr: '\`REALTIME\`',
+			parse: parseRoutingMode
 		},
 	}
 }
