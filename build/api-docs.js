@@ -78,7 +78,7 @@ The \`routingMode\` parameter influences which data the system uses to compute t
 
 Furthermore, \`REALTIME\` doesn't support [Pagination](#pagination) fully. If you need fully functioning pagination, use \`HYBRID\` instead.
 
-For more details on the different routing modes, see [here](https://github.com/public-transport/hafas-client/blob/45610fc951bb834e1b6f09e363ee820c0b92b673/p/db/readme.md#using-the-routingmode-option).
+The `hafas-client` repository has [more details on the different routing modes](https://github.com/public-transport/hafas-client/blob/45610fc951bb834e1b6f09e363ee820c0b92b673/p/db/readme.md#using-the-routingmode-option).
 `,
 	'/journeys/:ref': `\
 Uses [\`hafasClient.refreshJourney()\`](https://github.com/public-transport/hafas-client/blob/6/docs/refresh-journey.md) to **"refresh" a journey, using its \`refreshToken\`**.
