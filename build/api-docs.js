@@ -75,6 +75,7 @@ Check the [\`hafasClient.journeys()\` docs](https://github.com/public-transport/
 ### Routing mode
 
 The \`routingMode\` parameter influences which data the system uses to compute the query results. The default is \`REALTIME\` and does *not* include canceled journeys. If you want canceled journeys to be included in the response, use \`HYBRID\` instead.
+
 Furthermore, \`REALTIME\` doesn't support [Pagination](#pagination) fully. If you need fully functioning pagination, use \`HYBRID\` instead.
 
 For more details on the different routing modes, see [here](https://github.com/public-transport/hafas-client/blob/45610fc951bb834e1b6f09e363ee820c0b92b673/p/db/readme.md#using-the-routingmode-option).
