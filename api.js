@@ -73,7 +73,7 @@ const mapRouteParsers = (route, parsers) => {
 			description: 'HAFAS routing mode, see the "Routing Mode" section',
 			type: 'string',
 			enum: Object.keys(routingModes),
-			defaultStr: '\`REALTIME\`',
+			defaultStr: '`REALTIME`',
 			parse: parseRoutingMode
 		},
 	}
